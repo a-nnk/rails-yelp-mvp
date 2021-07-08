@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <h2 class="my-5"> New Restaurant 👻 </h2>
+  </div>
+  <div class="row">
+    <div class="col-8 align-self-center">
+      <%= simple_form_for @restaurant do |f| %>
+        <%= f.input :name, class: "mb-5" %>
+        <%= f.input :address, class: "mb-3" %>
+        <%= f.input :phone_number, class: "mb-3" %>
+        <%= f.input :category, class: "mb-3" %>
+        <%= f.submit class: "btn btn-primary mt-3" %>
+      <% end %>
+    </div>
+  </div>
+</div>
